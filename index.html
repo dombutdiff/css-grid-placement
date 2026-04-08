@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+
+    .grid-container {
+      display: grid;
+      place-content: center;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 20px;
+      background-color: rgb(0, 0, 0);
+      gap: 10px;
+    }
+
+    .div1 {
+      background-color: #E72F24;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+    }
+
+    .div2 {
+      /* border: 2px solid #000; */
+      background-color: #98b81a;
+      grid-area: 1 / 2 / 2 / 5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .div3 {
+      background-color: #98b81a;
+      grid-area: 2 / 1 / 4 / 2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .div4 {
+      background-color: #98b81a;
+      grid-area: 2 / 2 / 4 / 4;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .div5 {
+      background-color: #004592;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .div6 {
+      background-color: #98b81a;
+      grid-area: 3 / 4 / 5 / 5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .div7 {
+      background-color: #98b81a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .div8 {
+      background-color: #F9D01E;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .div9 {
+      background-color: #232629;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+   <div class="grid-container">
+    <div class="div1">div1</div>
+    <div class="div2">div2</div>
+    <div class="div3">div3</div>
+    <div class="div4">div4</div>
+    <div class="div5">div5</div>
+    <div class="div6">div6</div>
+    <div class="div7">div7</div>
+    <div class="div8">div8</div>
+    <div class="div9">div9</div>
+   </div>
+</body>
+
+</html>
